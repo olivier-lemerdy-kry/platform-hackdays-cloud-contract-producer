@@ -44,6 +44,6 @@ tasks.named('test') {
 }
 
 contracts {
-    baseClassForTests = 'se.kry.demo.contract.producer.BaseContractTest'
+    baseClassForTests = 'se.kry.demo.contract.producer.WebBase'
 }
 
