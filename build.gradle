@@ -49,3 +49,13 @@ contracts {
     baseClassForTests = 'se.kry.demo.contract.producer.WebBase'
 }
 
+publishing {
+    publications {
+        stubs(MavenPublication) {
+            artifactId project.name
+            artifact verifierStubsJar
+        }
+    }
+}
+
+
