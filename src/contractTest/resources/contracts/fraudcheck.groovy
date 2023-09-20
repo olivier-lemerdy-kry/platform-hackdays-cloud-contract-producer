@@ -18,7 +18,7 @@ Contract.make {
         status OK() // (7)
         body([ // (8)
                fraudCheckStatus  : "FRAUD",
-               "rejection.reason": "Amount too high"
+               "rejection": "Amount too high"
         ])
         headers { // (9)
             contentType('application/json')

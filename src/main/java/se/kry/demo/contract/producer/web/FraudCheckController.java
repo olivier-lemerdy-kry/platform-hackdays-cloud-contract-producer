@@ -13,7 +13,7 @@ public class FraudCheckController {
   @PutMapping
   public FraudCheckResponse fraudCheck(@RequestBody @Valid FraudCheckRequest request) {
     if (request.loanAmount() > 10000) {
-      return new FraudCheckResponse(FraudCheckStatus.FRAUD, new Rejection("Amount too high"));
+      return new FraudCheckResponse(FraudCheckStatus.FRAUD, "Amount too high");
     }
     return new FraudCheckResponse(FraudCheckStatus.OK, null);
   }
