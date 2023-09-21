@@ -1,4 +1,4 @@
-package se.kry.demo.contract.producer.web;
+package se.kry.demo.contract.producer.domain;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Positive;
